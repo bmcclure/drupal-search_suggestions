@@ -1,0 +1,7 @@
+name: "Search Suggestions: Autocomplete"
+description: "Adds Autocomplete support to Search Suggestions"
+dependencies:
+  - search_suggestions:search_suggestions
+core: 8.x
+type: module
+package: Search

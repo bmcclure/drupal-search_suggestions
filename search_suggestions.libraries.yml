@@ -1,0 +1,44 @@
+search_suggestions_container:
+  version: VERSION
+  css:
+    theme:
+      css/search_suggestions_container.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+search_suggestions_container_search_input:
+  version: VERSION
+  css:
+    theme:
+      css/search_suggestions_container_search_input.css: {}
+  js:
+    js/search_suggestions_container_search_input.js: {}
+  dependencies:
+    - search_suggestions/search_suggestions_container
+
+search_suggestions_container_search_input_modal:
+  version: VERSION
+  css:
+    theme:
+      css/search_suggestions_container_search_input_modal.css: {}
+  dependencies:
+    - search_suggestions/search_suggestions_container_search_input
+
+search_suggestions_container_block:
+  version: VERSION
+  css:
+    theme:
+      css/search_suggestions_container_block.css: {}
+  dependencies:
+    - search_suggestions/search_suggestions_container
+
+search_suggestions:
+  version: VERSION
+  css:
+    theme:
+      css/search_suggestions.css: {}
+  js:
+    js/search_suggestions.js: {}
+  dependencies:
+    - search_suggestions/search_suggestions_container

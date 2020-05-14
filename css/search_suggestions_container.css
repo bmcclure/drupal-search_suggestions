@@ -1,0 +1,36 @@
+.search-suggestions-container-form {
+
+}
+
+.search-suggestions-container {
+  display: none;
+}
+
+.search-suggestions-container-form.is-searchSuggestionsOpen .search-suggestions-container,
+.search-suggestions-container-block .search-suggestions-container {
+  display: block;
+}
+
+.search-suggestions-container__heading {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0.5em 0;
+  padding: 0 1em;
+}
+
+.search-suggestions-container:empty {
+  display: none;
+}
+
+.search-suggestions-results {
+  padding: 1em;
+}
+
+.search-suggestions-container-close-icon {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 0.75em;
+  top: 0.75em;
+  width: 20px;
+}

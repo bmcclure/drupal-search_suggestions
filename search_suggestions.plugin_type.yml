@@ -1,0 +1,19 @@
+search_suggester_container:
+  label: Search Suggester container
+  plugin_manager_service_id: plugin.manager.search_suggestions_container.container
+  plugin_definition_decorator_class: \Drupal\plugin\PluginDefinition\ArrayPluginDefinitionDecorator
+
+search_suggester_display:
+  label: Search Suggester display
+  plugin_manager_service_id: plugin.manager.search_suggester.display
+  plugin_definition_decorator_class: \Drupal\plugin\PluginDefinition\ArrayPluginDefinitionDecorator
+
+search_suggester_form:
+  label: Search Suggester form
+  plugin_manager_service_id: plugin.manager.search_suggester.form
+  plugin_definition_decorator_class: \Drupal\plugin\PluginDefinition\ArrayPluginDefinitionDecorator
+
+search_suggester_searcher:
+  label: Search Suggester searcher
+  plugin_manager_service_id: plugin.manager.search_suggester.searcher
+  plugin_definition_decorator_class: \Drupal\plugin\PluginDefinition\ArrayPluginDefinitionDecorator

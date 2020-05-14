@@ -1,0 +1,25 @@
+services:
+  search_suggester.manager:
+    class: Drupal\search_suggestions\SearchSuggesterManager
+    arguments: ['@entity_type.manager']
+  search_suggestions_container.manager:
+    class: Drupal\search_suggestions\SearchSuggestionsContainerManager
+    arguments: ['@entity_type.manager']
+  search_suggestions.search_suggestions_subscriber:
+    class: Drupal\search_suggestions\EventSubscriber\SearchSuggestionsSubscriber
+    tags:
+      - { name: event_subscriber }
+  plugin.manager.search_suggestions_container.container:
+    class: Drupal\search_suggestions\SearchSuggestionsContainerPluginManager
+    parent: default_plugin_manager
+  plugin.manager.search_suggester.display:
+    class: Drupal\search_suggestions\SearchSuggesterDisplayManager
+    parent: default_plugin_manager
+  plugin.manager.search_suggester.form:
+    class: Drupal\search_suggestions\SearchSuggesterFormManager
+    parent: default_plugin_manager
+  plugin.manager.search_suggester.searcher:
+    class: Drupal\search_suggestions\SearchSuggesterSearcherManager
+    parent: default_plugin_manager
+  search_suggestions.result_type_manager:
+    class: Drupal\search_suggestions\ResultTypeManager

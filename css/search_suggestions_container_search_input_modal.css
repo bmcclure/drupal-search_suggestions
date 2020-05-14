@@ -1,0 +1,45 @@
+
+
+.search-suggestions-container--search-input.search-suggestions-container--search-input-modal {
+  left: -2em;
+  overflow: hidden;
+  padding: 6em 0 0;
+  right: -2em;
+  top: -2.5em;
+  width: auto;
+  z-index: 1;
+}
+
+.search-suggestions-container-form.is-searchSuggestionsOpen .search-suggestions-container--search-input.search-suggestions-container--search-input-modal + .form-type-textfield {
+  z-index: 1;
+}
+
+.search-suggestions-container--search-input-modal .search-suggestions-container-inner {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 1em;
+}
+
+.search-suggestions-container-background {
+  background: black;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.search-suggestions-container-form.is-searchSuggestionsOpen .search-suggestions-container-background {
+  display: block;
+}
+
+@media (max-width: 899px) {
+  .search-suggestions-container-form.is-searchSuggestionsOpen {
+    position: fixed;
+    top: 0;
+  }
+}

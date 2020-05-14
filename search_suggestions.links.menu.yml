@@ -1,0 +1,17 @@
+search_suggestions.admin:
+  title: 'Search suggestions'
+  route_name: 'search_suggestions.admin'
+  parent: 'system.admin_config_search'
+  description: 'Configure Search suggesters and containers.'
+
+entity.search_suggester.collection:
+  title: 'Suggesters'
+  route_name: entity.search_suggester.collection
+  parent: search_suggestions.admin
+  description: 'Manage search suggesters.'
+
+entity.search_suggestions_container.collection:
+  title: 'Containers'
+  route_name: entity.search_suggestions_container.collection
+  parent: search_suggestions.admin
+  description: 'Manage search suggestions containers.'

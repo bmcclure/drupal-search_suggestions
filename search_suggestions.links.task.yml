@@ -1,0 +1,19 @@
+entity.search_suggester.collection:
+  route_name: entity.search_suggester.collection
+  base_route: entity.search_suggester.collection
+  title: List
+
+entity.search_suggester.edit_form:
+  route_name: entity.search_suggester.edit_form
+  base_route: entity.search_suggester.edit_form
+  title: Edit
+
+entity.search_suggestions_container.collection:
+  route_name: entity.search_suggestions_container.collection
+  base_route: entity.search_suggestions_container.collection
+  title: List
+
+entity.search_suggestions_container.edit_form:
+  route_name: entity.search_suggestions_container.edit_form
+  base_route: entity.search_suggestions_container.edit_form
+  title: Edit

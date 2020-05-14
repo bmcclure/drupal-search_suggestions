@@ -1,0 +1,17 @@
+search_suggestions_autocomplete:
+  js:
+    js/search_suggestions_autocomplete.js: {}
+  css:
+    theme:
+      css/search_suggestions_autocomplete.css: {}
+  dependencies:
+    - core/drupal.ajax
+jquery_ui_autocomplete:
+  js:
+    js/jquery_ui_autocomplete.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.ajax
+    - core/jquery.ui.autocomplete

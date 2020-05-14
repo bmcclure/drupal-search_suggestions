@@ -1,0 +1,7 @@
+.search-suggester-results {
+  padding: 0.25em;
+}
+
+.search-suggester-results:empty {
+  display: none;
+}

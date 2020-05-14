@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function search_suggestions_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+  if (strpos($form_id, 'search_suggester_') === 0) {
+    return;
+  }
+
+  /** @var \Drupal\search_suggestions\SearchSuggesterManagerInterface $suggesterManager */
+  $suggesterManager = Drupal::service('search_suggester.manager');
+  $suggesterManager->formAlter($form, $form_state, $form_id);
+
+  /** @var \Drupal\search_suggestions\SearchSuggestionsContainerManagerInterface $containerManager */
+  $containerManager = Drupal::service('search_suggestions_container.manager');
+  $containerManager->formAlter($form, $form_state, $form_id);
+}

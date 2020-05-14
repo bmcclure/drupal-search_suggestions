@@ -1,0 +1,78 @@
+search_suggestions.suggest:
+  path: '/search_suggestions/suggest/{search_suggester}'
+  defaults:
+    _controller: '\Drupal\search_suggestions\Controller\SearchSuggestionsController::suggest'
+  requirements:
+    _permission: 'view search_suggestions'
+
+search_suggestions.admin:
+  path: '/admin/config/search/suggestions'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Search suggestions'
+  requirements:
+    _permission: 'administer search_suggestions'
+
+entity.search_suggester.collection:
+  path: '/admin/config/search/suggestions/suggesters'
+  defaults:
+    _entity_list: 'search_suggester'
+    _title: 'Search suggesters'
+  requirements:
+    _permission: 'administer search_suggestions'
+
+entity.search_suggester.add_form:
+  path: '/admin/config/search/suggestions/suggesters/add'
+  defaults:
+    _entity_form: 'search_suggester.add'
+    _title: 'Add search suggester'
+  requirements:
+    _permission: 'administer search_suggestions'
+
+entity.search_suggester.edit_form:
+  path: '/admin/config/search/suggestions/suggesters/{search_suggester}'
+  defaults:
+    _entity_form: 'search_suggester.edit'
+    _title: 'Edit search suggester'
+  requirements:
+    _permission: 'administer search_suggestions'
+
+entity.search_suggester.delete_form:
+  path: '/admin/config/search/suggestions/suggesters/{search_suggester}/delete'
+  defaults:
+    _entity_form: 'search_suggester.delete'
+    _title: 'Delete search suggester'
+  requirements:
+    _permission: 'administer search_suggestions'
+
+entity.search_suggestions_container.collection:
+  path: '/admin/config/search/suggestions/containers'
+  defaults:
+    _entity_list: 'search_suggestions_container'
+    _title: 'Search suggestions containers'
+  requirements:
+    _permission: 'administer search_suggestions'
+
+entity.search_suggestions_container.add_form:
+  path: '/admin/config/search/suggestions/containers/add'
+  defaults:
+    _entity_form: 'search_suggestions_container.add'
+    _title: 'Add search suggestions container'
+  requirements:
+    _permission: 'administer search_suggestions'
+
+entity.search_suggestions_container.edit_form:
+  path: '/admin/config/search/suggestions/containers/{search_suggestions_container}'
+  defaults:
+    _entity_form: 'search_suggestions_container.edit'
+    _title: 'Edit search suggestions container'
+  requirements:
+    _permission: 'administer search_suggestions'
+
+entity.search_suggestions_container.delete_form:
+  path: '/admin/config/search/suggestions/containers/{search_suggestions_container}/delete'
+  defaults:
+    _entity_form: 'search_suggestions_container.delete'
+    _title: 'Delete search suggestions container'
+  requirements:
+    _permission: 'administer search_suggestions'

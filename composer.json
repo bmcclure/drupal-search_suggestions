@@ -1,0 +1,8 @@
+{
+  "name": "drupal/search_suggestions",
+  "type": "drupal-module",
+  "description": "Adds dropdown search suggestions to search fields.",
+  "homepage": "https://www.drupal.org/project/search_suggestions",
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev"
+}

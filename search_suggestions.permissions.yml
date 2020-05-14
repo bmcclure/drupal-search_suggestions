@@ -1,0 +1,7 @@
+administer search_suggestions:
+  title: 'Administer search suggestions'
+  description: 'Allows the configuration of Search Suggesters.'
+  restrict access: true
+view search_suggestions:
+  title: 'View search suggestions'
+  description: 'Allows the viewing of suggestions from Search Suggestions.'

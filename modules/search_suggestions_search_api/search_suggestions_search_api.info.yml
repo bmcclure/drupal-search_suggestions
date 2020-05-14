@@ -1,0 +1,8 @@
+name: "Search Suggestions: Search API"
+description: "Adds Search API support to Search Suggestions"
+dependencies:
+  - search_suggestions:search_suggestions
+  - search_api:search_api
+core: 8.x
+type: module
+package: Search

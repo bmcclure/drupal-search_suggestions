@@ -1,0 +1,7 @@
+search_suggestions_autocomplete.autocomplete:
+  path: '/search_suggestions/autocomplete/{search_suggester}/{input}'
+  defaults:
+    _controller: '\Drupal\search_suggestions_autocomplete\Controller\AutocompleteController::autocomplete'
+    _title: 'Search Suggestions'
+  requirements:
+    _permission: 'view search_suggestions'

@@ -1,0 +1,65 @@
+search_suggestions.search_suggester_plugin.*:
+  type: mapping
+  label: 'Search suggester plugin configuration'
+  mapping: {}
+
+search_suggestions.search_suggestions_container.*:
+  type: config_entity
+  label: 'Search suggestions container'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    container_plugin_id:
+      type: string
+      label: 'Container plugin'
+    container_configuration:
+      type: search_suggestions.search_suggester_plugin.container
+      label: 'Container settings'
+    container_type:
+      type: string
+      label: 'Container type'
+
+search_suggestions.search_suggester.*:
+  type: config_entity
+  label: 'Search suggester'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    heading:
+      type: label
+      label: 'Heading'
+    enabled:
+      type: boolean
+      label: 'Enabled'
+    container_id:
+      type: string
+      label: 'Search suggestions container'
+    container_weight:
+      type: integer
+      label: 'Container weight'
+    display_plugin_id:
+      type: string
+      label: 'Display plugin'
+    display_configuration:
+      type: search_suggestions.search_suggester_plugin.display
+      label: 'Display settings'
+    form_plugin_id:
+      type: string
+      label: 'Form plugin'
+    form_configuration:
+      type: search_suggestions.search_suggester_plugin.form
+      label: 'Form settings'
+    searcher_plugin_id:
+      type: string
+      label: 'Searcher plugin'
+    searcher_configuration:
+      type: search_suggestions.search_suggester_plugin.searcher
+      label: 'Searcher settings'

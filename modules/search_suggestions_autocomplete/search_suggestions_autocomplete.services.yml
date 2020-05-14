@@ -1,0 +1,7 @@
+services:
+  search_suggestions_autocomplete_subscriber:
+    class: '\Drupal\search_suggestions_autocomplete\EventSubscriber\AutocompleteSubscriber'
+    tags:
+      - { name: 'event_subscriber' }
+  search_suggestions_autocomplete.builder_manager:
+    class: '\Drupal\search_suggestions_autocomplete\AutocompleteBuilderManager'

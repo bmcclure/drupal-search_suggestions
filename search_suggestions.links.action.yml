@@ -1,0 +1,11 @@
+entity.search_suggester.add_form:
+  route_name: entity.search_suggester.add_form
+  title: 'Add search suggester'
+  appears_on:
+    - entity.search_suggester.collection
+
+entity.search_suggestions_container.add_form:
+  route_name: entity.search_suggestions_container.add_form
+  title: 'Add search suggestions container'
+  appears_on:
+    - entity.search_suggestions_container.collection
